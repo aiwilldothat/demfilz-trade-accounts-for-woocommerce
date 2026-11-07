@@ -1,0 +1,113 @@
+/* Demfilz Trade Accounts: My Account, checkout and shortcode styles. */
+
+.dtaw-account-section {
+	margin: 0 0 2.5em;
+}
+
+.dtaw-account-section h2 {
+	font-size: 1.25em;
+	margin: 0 0 0.75em;
+}
+
+.dtaw-status {
+	padding: 1em 1.25em;
+	border-left: 4px solid #2271b1;
+	background: #f6f7f7;
+	margin: 0 0 1.5em;
+}
+
+.dtaw-status-approved {
+	border-left-color: #00a32a;
+}
+
+.dtaw-status-pending {
+	border-left-color: #dba617;
+}
+
+.dtaw-status-suspended,
+.dtaw-status-declined {
+	border-left-color: #d63638;
+}
+
+.dtaw-status p:last-child {
+	margin-bottom: 0;
+}
+
+.dtaw-balance {
+	font-size: 1.1em;
+}
+
+.dtaw-overdue {
+	color: #d63638;
+	font-weight: 600;
+}
+
+.dtaw-row-overdue td {
+	background: rgba(214, 54, 56, 0.06);
+}
+
+.dtaw-empty {
+	opacity: 0.75;
+}
+
+.dtaw-instructions {
+	white-space: normal;
+}
+
+.dtaw-apply-form .form-row-first,
+.dtaw-apply-form .form-row-last {
+	width: 48%;
+}
+
+.dtaw-apply-form .form-row-first {
+	float: left;
+}
+
+.dtaw-apply-form .form-row-last {
+	float: right;
+}
+
+.dtaw-apply-form .form-row-wide {
+	clear: both;
+}
+
+@media (max-width: 600px) {
+	.dtaw-apply-form .form-row-first,
+	.dtaw-apply-form .form-row-last {
+		width: 100%;
+		float: none;
+	}
+}
+
+.dtaw-order-block.dtaw-info {
+	display: block;
+	margin: 0 0 2em;
+}
+
+.dtaw-order-block p {
+	margin: 0 0 0.5em;
+}
+
+.dtaw-instructions-title {
+	margin-top: 1em;
+}
+
+/* Classic checkout box. */
+.payment_box .dtaw-terms,
+.payment_box .dtaw-extra {
+	margin: 0 0 0.75em;
+}
+
+.payment_box .dtaw-po-row label .optional {
+	opacity: 0.6;
+	font-weight: normal;
+}
+
+/* Checkout block box. */
+.dtaw-blocks-content p {
+	margin: 0 0 0.75em;
+}
+
+.dtaw-blocks-content .dtaw-po-wrap {
+	margin-top: 1em;
+}

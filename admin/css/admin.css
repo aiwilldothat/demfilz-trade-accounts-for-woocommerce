@@ -1,0 +1,206 @@
+/* Demfilz Trade Accounts: admin screens. */
+
+.dtaw-wrap .dtaw-tiles {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 12px;
+	margin: 16px 0 20px;
+}
+
+.dtaw-tile {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 12px 16px;
+}
+
+.dtaw-tile-label {
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #646970;
+	margin-bottom: 4px;
+}
+
+.dtaw-tile-value {
+	display: block;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.dtaw-tile-overdue .dtaw-tile-value {
+	color: #d63638;
+}
+
+.dtaw-panel {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 16px 20px 20px;
+	margin: 16px 0;
+	max-width: 1100px;
+}
+
+.dtaw-panel h2 {
+	margin-top: 0;
+}
+
+.dtaw-cols {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+	max-width: 1100px;
+}
+
+@media (max-width: 960px) {
+	.dtaw-cols {
+		grid-template-columns: 1fr;
+	}
+}
+
+.dtaw-cols .dtaw-panel {
+	margin: 0;
+}
+
+.dtaw-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+	margin: 12px 0;
+}
+
+.dtaw-filters .subsubsub {
+	margin: 0;
+	float: none;
+}
+
+.dtaw-filters form {
+	display: flex;
+	gap: 6px;
+	margin-left: auto;
+}
+
+.dtaw-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 10px;
+	font-size: 12px;
+	line-height: 1.6;
+	background: #f0f0f1;
+	color: #1d2327;
+	white-space: nowrap;
+}
+
+.dtaw-badge-open,
+.dtaw-badge-approved {
+	background: #e6f4ea;
+	color: #0a6b2b;
+}
+
+.dtaw-badge-overdue,
+.dtaw-badge-suspended,
+.dtaw-badge-declined {
+	background: #fbeaea;
+	color: #a32226;
+}
+
+.dtaw-badge-pending {
+	background: #fcf4dd;
+	color: #7a5a05;
+}
+
+.dtaw-badge-paid {
+	background: #e5effa;
+	color: #1b4f8a;
+}
+
+.dtaw-badge-void {
+	background: #f0f0f1;
+	color: #646970;
+}
+
+.dtaw-muted {
+	color: #646970;
+}
+
+.dtaw-actions a,
+.dtaw-actions button {
+	margin-right: 4px;
+}
+
+.dtaw-inline-form {
+	display: inline;
+}
+
+.dtaw-order-box p {
+	margin: 0 0 10px;
+}
+
+.dtaw-order-box label {
+	font-weight: 600;
+}
+
+.dtaw-order-box input[type="text"],
+.dtaw-order-box input[type="date"] {
+	width: 100%;
+}
+
+.dtaw-record-form button {
+	margin-top: 4px;
+}
+
+.dtaw-order-line {
+	margin: 8px 0 0;
+}
+
+.dtaw-account-head {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px 32px;
+	align-items: flex-start;
+}
+
+.dtaw-account-head dl {
+	margin: 0;
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 4px 16px;
+}
+
+.dtaw-account-head dt {
+	font-weight: 600;
+}
+
+.dtaw-account-head dd {
+	margin: 0;
+}
+
+.dtaw-user-panel .dtaw-badge {
+	vertical-align: middle;
+}
+
+table.widefat td.dtaw-num,
+table.widefat th.dtaw-num {
+	text-align: right;
+}
+
+.dtaw-notice-inline {
+	margin: 8px 0 0;
+}
+
+.dtaw-wrap .form-table textarea {
+	width: 100%;
+	max-width: 520px;
+}
+
+.dtaw-roles label {
+	display: block;
+	margin: 0 0 4px;
+}
+
+.dtaw-order-box .notice.inline {
+	margin: 0 0 12px;
+}

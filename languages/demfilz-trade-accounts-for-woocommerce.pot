@@ -1,0 +1,1094 @@
+# Copyright (C) 2026 Demfilz
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Demfilz Trade Accounts for WooCommerce 1.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/demfilz-trade-accounts-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-07T09:23:20+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: demfilz-trade-accounts-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: demfilz-trade-accounts-for-woocommerce.php
+msgid "Demfilz Trade Accounts for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: demfilz-trade-accounts-for-woocommerce.php
+msgid "https://demfilz.com/trade-accounts-for-woocommerce"
+msgstr ""
+
+#. Description of the plugin
+#: demfilz-trade-accounts-for-woocommerce.php
+msgid "Let approved trade customers pay on account: a \"Pay on account\" option at checkout with payment terms and a purchase order number, account applications and approval, open invoices with due dates and balances owing, and payment recording."
+msgstr ""
+
+#. Author of the plugin
+#: demfilz-trade-accounts-for-woocommerce.php
+msgid "Demfilz"
+msgstr ""
+
+#. Author URI of the plugin
+#: demfilz-trade-accounts-for-woocommerce.php
+msgid "https://demfilz.com"
+msgstr ""
+
+#: demfilz-trade-accounts-for-woocommerce.php:85
+msgid "Demfilz Trade Accounts for WooCommerce requires WooCommerce to be installed and active."
+msgstr ""
+
+#: includes/class-dtaw-account.php:97
+#: includes/class-dtaw-account.php:102
+#: includes/class-dtaw-account.php:113
+#: includes/class-dtaw-admin.php:1091
+#: includes/class-dtaw-admin.php:1127
+#: includes/class-dtaw-orders.php:295
+#: includes/class-dtaw-privacy.php:34
+#: includes/class-dtaw-privacy.php:48
+#: includes/class-dtaw-privacy.php:107
+msgid "Trade account"
+msgstr ""
+
+#: includes/class-dtaw-account.php:151
+msgid "Thank you. Your application has been sent; we will email you when it has been reviewed."
+msgstr ""
+
+#: includes/class-dtaw-account.php:169
+msgid "Business name"
+msgstr ""
+
+#: includes/class-dtaw-account.php:173
+#: includes/class-dtaw-admin.php:554
+#: includes/class-dtaw-privacy.php:87
+#: templates/emails/dtaw-application.php:37
+msgid "ABN / tax id"
+msgstr ""
+
+#: includes/class-dtaw-account.php:177
+#: includes/class-dtaw-admin.php:558
+#: includes/class-dtaw-privacy.php:91
+#: templates/emails/dtaw-application.php:43
+msgid "Phone"
+msgstr ""
+
+#: includes/class-dtaw-account.php:181
+msgid "Tell us about your business"
+msgstr ""
+
+#: includes/class-dtaw-account.php:185
+msgid "Apply for a trade account"
+msgstr ""
+
+#: includes/class-dtaw-account.php:202
+msgid "Please log in or create an account to apply for a trade account."
+msgstr ""
+
+#: includes/class-dtaw-account.php:203
+msgid "Log in"
+msgstr ""
+
+#: includes/class-dtaw-account.php:230
+msgid "Your trade account is approved."
+msgstr ""
+
+#. translators: %d: days.
+#: includes/class-dtaw-account.php:233
+#, php-format
+msgid "Choose \"Pay on account\" at checkout; payment is due %d day from the order date."
+msgid_plural "Choose \"Pay on account\" at checkout; payment is due %d days from the order date."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-dtaw-account.php:235
+msgid "Choose \"Pay on account\" at checkout; payment is due on the day the order is placed."
+msgstr ""
+
+#. translators: %s: account reference.
+#: includes/class-dtaw-account.php:240
+#, php-format
+msgid "Your account reference is %s."
+msgstr ""
+
+#: includes/class-dtaw-account.php:251
+msgid "Your trade account application is being reviewed. We will email you when it has been decided."
+msgstr ""
+
+#: includes/class-dtaw-account.php:254
+msgid "Your trade account is suspended, so \"Pay on account\" is not available at checkout for now. Open invoices are still payable by their due dates. Please contact us if you have questions."
+msgstr ""
+
+#: includes/class-dtaw-account.php:257
+msgid "We were not able to open a trade account for you last time. You can apply again below."
+msgstr ""
+
+#: includes/class-dtaw-account.php:260
+msgid "Trade customers can order on account and pay the invoice by its due date. Apply below and we will be in touch."
+msgstr ""
+
+#: includes/class-dtaw-account.php:266
+msgid "See your invoices"
+msgstr ""
+
+#: includes/class-dtaw-account.php:281
+msgid "Your account"
+msgstr ""
+
+#: includes/class-dtaw-account.php:309
+#: includes/class-dtaw-admin.php:347
+msgid "Open invoices"
+msgstr ""
+
+#. translators: %s: amount.
+#: includes/class-dtaw-account.php:313
+#, php-format
+msgid "Balance owing: %s"
+msgstr ""
+
+#. translators: %s: amount.
+#: includes/class-dtaw-account.php:316
+#, php-format
+msgid "(%s overdue)"
+msgstr ""
+
+#: includes/class-dtaw-account.php:321
+msgid "Nothing is owing. Thank you."
+msgstr ""
+
+#: includes/class-dtaw-account.php:328
+#: includes/class-dtaw-orders.php:175
+#: includes/class-dtaw-orders.php:248
+#: templates/emails/dtaw-account-status.php:49
+msgid "How to pay"
+msgstr ""
+
+#: includes/class-dtaw-account.php:344
+msgid "Recently paid"
+msgstr ""
+
+#: includes/class-dtaw-account.php:363
+#: includes/class-dtaw-account.php:376
+#: includes/class-dtaw-admin.php:724
+msgid "Order"
+msgstr ""
+
+#: includes/class-dtaw-account.php:364
+#: includes/class-dtaw-account.php:387
+#: includes/class-dtaw-admin.php:728
+msgid "Date"
+msgstr ""
+
+#: includes/class-dtaw-account.php:365
+#: includes/class-dtaw-account.php:388
+msgid "Due"
+msgstr ""
+
+#: includes/class-dtaw-account.php:365
+#: includes/class-dtaw-account.php:388
+#: includes/class-dtaw-admin.php:648
+#: includes/class-dtaw-ledger.php:32
+msgid "Paid"
+msgstr ""
+
+#: includes/class-dtaw-account.php:366
+#: includes/class-dtaw-account.php:400
+#: includes/class-dtaw-admin.php:731
+msgid "Amount"
+msgstr ""
+
+#. translators: %s: purchase order number.
+#: includes/class-dtaw-account.php:382
+#: includes/class-dtaw-orders.php:431
+#: includes/class-dtaw-orders.php:499
+#, php-format
+msgid "PO %s"
+msgstr ""
+
+#: includes/class-dtaw-accounts.php:29
+msgid "No account"
+msgstr ""
+
+#: includes/class-dtaw-accounts.php:30
+msgid "Application pending"
+msgstr ""
+
+#: includes/class-dtaw-accounts.php:31
+msgid "Approved"
+msgstr ""
+
+#: includes/class-dtaw-accounts.php:32
+msgid "Declined"
+msgstr ""
+
+#: includes/class-dtaw-accounts.php:33
+msgid "Suspended"
+msgstr ""
+
+#: includes/class-dtaw-accounts.php:330
+msgid "An application cannot be made for this account right now."
+msgstr ""
+
+#: includes/class-dtaw-accounts.php:334
+msgid "Please enter your business name."
+msgstr ""
+
+#. translators: %d: user id.
+#: includes/class-dtaw-accounts.php:432
+#, php-format
+msgid "Customer #%d"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:131
+msgid "You are not allowed to manage trade accounts."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:159
+#: includes/class-dtaw-admin.php:233
+msgid "Accounts"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:160
+#: includes/class-dtaw-admin.php:629
+msgid "Invoices"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:161
+#: includes/class-dtaw-admin.php:234
+msgid "Settings"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:185
+#: includes/class-dtaw-admin.php:191
+#: includes/class-dtaw-admin.php:303
+msgid "Trade Accounts"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:252
+msgid "Account approved and the customer emailed."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:253
+msgid "Application declined and the customer emailed."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:254
+msgid "Account suspended and the customer emailed."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:255
+msgid "Account set back to pending."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:256
+msgid "Trade account record removed."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:257
+msgid "Account details saved."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:258
+msgid "Customer added and approved."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:259
+msgid "Payment recorded."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:260
+msgid "The invoice is unpaid again."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:261
+msgid "Settings saved."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:307
+msgid "Trade account sections"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:344
+msgid "Balance owing"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:345
+#: includes/class-dtaw-admin.php:457
+#: includes/class-dtaw-admin.php:647
+msgid "Overdue"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:346
+msgid "Due in the next 7 days"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:385
+msgid "Approve"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:385
+msgid "Reinstate"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:388
+msgid "Decline"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:391
+msgid "Suspend"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:394
+msgid "Remove record"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:398
+msgid "Remove this trade account record? Orders already placed on account are kept."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:423
+#: includes/class-dtaw-admin.php:650
+msgid "All"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:434
+msgid "Search accounts"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:435
+msgid "Name or email"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:436
+#: includes/class-dtaw-admin.php:681
+msgid "Search"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:453
+#: includes/class-dtaw-admin.php:511
+#: includes/class-dtaw-admin.php:547
+#: includes/class-dtaw-admin.php:726
+msgid "Customer"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:454
+#: includes/class-dtaw-admin.php:729
+#: includes/class-dtaw-admin.php:1130
+#: includes/class-dtaw-privacy.php:71
+msgid "Status"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:455
+#: includes/class-dtaw-admin.php:513
+msgid "Terms"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:456
+msgid "Owing"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:458
+msgid "Since"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:459
+#: includes/class-dtaw-admin.php:732
+msgid "Actions"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:464
+msgid "No trade accounts yet. Customers can apply from My Account, or add one below."
+msgstr ""
+
+#. translators: %d: days.
+#: includes/class-dtaw-admin.php:480
+#, php-format
+msgid "%d days"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:505
+msgid "Add a customer"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:506
+msgid "Approve an existing customer without an application. They are emailed that their account is open."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:512
+msgid "Search for a customer"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:514
+#: includes/class-dtaw-admin.php:582
+msgid "days"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:515
+msgid "Add and approve"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:531
+#: includes/class-dtaw-admin.php:925
+msgid "Customer not found."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:537
+msgid "All accounts"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:544
+msgid "Approved through their role (see Settings)."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:550
+#: includes/class-dtaw-privacy.php:83
+#: templates/emails/dtaw-application.php:32
+msgid "Business"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:562
+#: includes/class-dtaw-privacy.php:95
+#: templates/emails/dtaw-application.php:49
+msgid "Message"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:566
+#: includes/class-dtaw-privacy.php:99
+msgid "Applied"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:569
+msgid "Status since"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:580
+#: includes/class-dtaw-admin.php:1147
+msgid "Payment terms"
+msgstr ""
+
+#. translators: %d: days.
+#: includes/class-dtaw-admin.php:586
+#, php-format
+msgid "Leave empty for the store default (%d days)."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:592
+#: includes/class-dtaw-admin.php:1151
+#: includes/class-dtaw-privacy.php:79
+msgid "Account reference"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:593
+msgid "For example ACME01"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:593
+msgid "The account number in your books. Shown to the customer."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:604
+msgid "Internal notes"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:605
+msgid "Never shown to the customer."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:608
+msgid "Save account"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:646
+#: includes/class-dtaw-ledger.php:31
+msgid "Unpaid"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:649
+#: includes/class-dtaw-ledger.php:33
+#: includes/class-dtaw-ledger.php:583
+msgid "Void"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:679
+msgid "Search invoices"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:680
+msgid "Order number, PO or email"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:693
+msgid "Export CSV"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:730
+msgid "PO"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:737
+msgid "No invoices match."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:760
+msgid "Record this invoice as paid in full today? Open the order to enter a date or reference."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:760
+msgid "Paid today"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:763
+msgid "Open order"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:816
+msgid "Default payment terms"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:817
+msgid "days from the order date"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:817
+msgid "Used for every account without its own terms."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:820
+msgid "Status for orders on account"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:827
+msgid "Processing lets the order ship straight away, the usual trade account arrangement. The order is not marked paid until you record the payment."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:831
+#: includes/class-dtaw-gateway.php:134
+msgid "Purchase order number"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:834
+msgid "Ask for it (optional)"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:835
+msgid "Require it"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:836
+msgid "Do not ask"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:838
+msgid "Shown in the Pay on account box at checkout and stored on the order."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:842
+msgid "Auto approved roles"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:852
+msgid "Customers with one of these roles can pay on account without applying. A suspended or declined status still wins."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:856
+msgid "Applications"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:859
+msgid "Any logged in customer can apply from My Account"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:860
+msgid "No applications: I add accounts myself"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:862
+msgid "The [dtaw_apply] shortcode shows the same application form on any page."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:866
+msgid "Payment instructions"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:867
+msgid "Bank details and how to reference the payment. Shown on the thank you page, in the order emails and in My Account for unpaid invoices."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:870
+msgid "When a payment is recorded"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:871
+msgid "Mark Processing or On hold orders as Completed"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:874
+msgid "Uninstall"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:875
+msgid "Delete account statuses, applications and settings when the plugin is deleted (invoice details stay on the orders)"
+msgstr ""
+
+#. translators: %s: link to the gateway settings.
+#: includes/class-dtaw-admin.php:882
+#, php-format
+msgid "The title and description shown at checkout are on the %s."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:883
+msgid "Pay on account gateway settings"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:887
+msgid "Save settings"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:910
+msgid "That status change could not be made."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:950
+msgid "Choose a customer first."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:968
+#: includes/class-dtaw-admin.php:996
+msgid "Order not found."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:1138
+msgid "Approved through their role."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:1141
+msgid "Open the trade account (application, invoices, balance)"
+msgstr ""
+
+#: includes/class-dtaw-admin.php:1142
+msgid "Changing the status here emails the customer, as approving from the Trade Accounts screen does."
+msgstr ""
+
+#: includes/class-dtaw-admin.php:1148
+msgid "days (empty = store default)"
+msgstr ""
+
+#: includes/class-dtaw-blocks-gateway.php:73
+#: includes/class-dtaw-gateway.php:35
+#: includes/class-dtaw-gateway.php:58
+msgid "Pay on account"
+msgstr ""
+
+#: includes/class-dtaw-blocks-gateway.php:79
+#: includes/class-dtaw-gateway.php:162
+msgid "optional"
+msgstr ""
+
+#: includes/class-dtaw-blocks-gateway.php:80
+#: includes/class-dtaw-gateway.php:187
+msgid "Please enter your purchase order number."
+msgstr ""
+
+#: includes/class-dtaw-blocks-gateway.php:81
+msgid "Place order on account"
+msgstr ""
+
+#: includes/class-dtaw-emails.php:52
+msgid "Welcome aboard. Orders placed before 2pm ship the same day."
+msgstr ""
+
+#: includes/class-dtaw-emails.php:55
+msgid "Acme Trade Supplies"
+msgstr ""
+
+#: includes/class-dtaw-emails.php:58
+msgid "We order roughly twice a month and would like 30 day terms."
+msgstr ""
+
+#: includes/class-dtaw-gateway.php:27
+msgid "Pay on account (Demfilz Trade Accounts)"
+msgstr ""
+
+#: includes/class-dtaw-gateway.php:28
+msgid "Lets approved trade customers place orders on account and pay the invoice by its due date. Shown only to customers whose trade account is approved. Manage accounts, terms and payments under WooCommerce > Trade Accounts."
+msgstr ""
+
+#: includes/class-dtaw-gateway.php:49
+msgid "Enable/Disable"
+msgstr ""
+
+#: includes/class-dtaw-gateway.php:51
+msgid "Enable Pay on account"
+msgstr ""
+
+#: includes/class-dtaw-gateway.php:55
+msgid "Title"
+msgstr ""
+
+#: includes/class-dtaw-gateway.php:57
+msgid "Shown to approved customers at checkout."
+msgstr ""
+
+#: includes/class-dtaw-gateway.php:62
+msgid "Description"
+msgstr ""
+
+#: includes/class-dtaw-gateway.php:64
+msgid "Shown under the title at checkout. The payment terms and your payment instructions (WooCommerce > Trade Accounts > Settings) are added automatically."
+msgstr ""
+
+#: includes/class-dtaw-gateway.php:65
+msgid "Place this order on your trade account and pay the invoice by the due date."
+msgstr ""
+
+#: includes/class-dtaw-gateway.php:106
+msgid "Payment is due on the day the order is placed."
+msgstr ""
+
+#. translators: %d: days.
+#: includes/class-dtaw-gateway.php:109
+#, php-format
+msgid "Payment is due %d day from the order date."
+msgid_plural "Payment is due %d days from the order date."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-dtaw-gateway.php:204
+msgid "Pay on account is not available for your account. Please choose another payment method."
+msgstr ""
+
+#: includes/class-dtaw-gateway.php:222
+msgid "This order cannot be placed on account. Please choose another payment method."
+msgstr ""
+
+#. translators: 1: due date, 2: terms in days.
+#: includes/class-dtaw-ledger.php:225
+#, php-format
+msgid "Placed on trade account. Payment due %1$s (%2$d days)."
+msgstr ""
+
+#. translators: %s: purchase order number.
+#: includes/class-dtaw-ledger.php:231
+#, php-format
+msgid "PO %s."
+msgstr ""
+
+#: includes/class-dtaw-ledger.php:261
+msgid "This order is not an unpaid on-account invoice."
+msgstr ""
+
+#. translators: 1: amount, 2: date.
+#: includes/class-dtaw-ledger.php:289
+#, php-format
+msgid "Payment of %1$s recorded, received %2$s."
+msgstr ""
+
+#. translators: %s: payment reference.
+#: includes/class-dtaw-ledger.php:295
+#, php-format
+msgid "Reference %s."
+msgstr ""
+
+#: includes/class-dtaw-ledger.php:303
+msgid "Completed: on-account invoice paid."
+msgstr ""
+
+#: includes/class-dtaw-ledger.php:325
+msgid "No recorded payment to reverse on this order."
+msgstr ""
+
+#: includes/class-dtaw-ledger.php:333
+msgid "Recorded payment reversed; the invoice is unpaid again."
+msgstr ""
+
+#: includes/class-dtaw-ledger.php:375
+msgid "On-account invoice is unpaid again."
+msgstr ""
+
+#. translators: %s: date.
+#: includes/class-dtaw-ledger.php:580
+#, php-format
+msgid "Paid %s"
+msgstr ""
+
+#. translators: %d: days.
+#: includes/class-dtaw-ledger.php:588
+#, php-format
+msgid "Overdue by %d day"
+msgid_plural "Overdue by %d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: date.
+#: includes/class-dtaw-ledger.php:591
+#, php-format
+msgid "Due %s"
+msgstr ""
+
+#. translators: %s: order status.
+#: includes/class-dtaw-orders.php:82
+#, php-format
+msgid "On-account invoice void: order %s."
+msgstr ""
+
+#: includes/class-dtaw-orders.php:107
+msgid "On-account invoice void: order fully refunded."
+msgstr ""
+
+#. translators: 1: amount, 2: date.
+#: includes/class-dtaw-orders.php:134
+#, php-format
+msgid "This order was placed on your trade account. Payment of %1$s was received on %2$s. Thank you."
+msgstr ""
+
+#: includes/class-dtaw-orders.php:136
+msgid "This order was placed on your trade account and no longer needs to be paid."
+msgstr ""
+
+#. translators: 1: amount, 2: due date.
+#: includes/class-dtaw-orders.php:139
+#, php-format
+msgid "This order was placed on your trade account. Payment of %1$s is due by %2$s."
+msgstr ""
+
+#. translators: %s: purchase order number.
+#: includes/class-dtaw-orders.php:144
+#, php-format
+msgid "Your purchase order number: %s"
+msgstr ""
+
+#. translators: %s: purchase order number.
+#: includes/class-dtaw-orders.php:230
+#, php-format
+msgid "Purchase order number: %s"
+msgstr ""
+
+#: includes/class-dtaw-orders.php:238
+#: templates/emails/plain/dtaw-account-status.php:40
+msgid "How to pay:"
+msgstr ""
+
+#. translators: 1: customer or business name, 2: due date, 3: terms in days.
+#: includes/class-dtaw-orders.php:264
+#, php-format
+msgid "Placed on the trade account of %1$s. Payment due %2$s (%3$d day terms)."
+msgstr ""
+
+#. translators: %s: customer or business name.
+#: includes/class-dtaw-orders.php:329
+#, php-format
+msgid "Account: %s"
+msgstr ""
+
+#. translators: 1: due date, 2: terms in days.
+#: includes/class-dtaw-orders.php:338
+#, php-format
+msgid "Due %1$s (%2$d days)"
+msgstr ""
+
+#. translators: %s: amount.
+#: includes/class-dtaw-orders.php:343
+#, php-format
+msgid "Invoice amount: %s"
+msgstr ""
+
+#. translators: %s: purchase order number.
+#: includes/class-dtaw-orders.php:347
+#, php-format
+msgid "PO: %s"
+msgstr ""
+
+#. translators: %s: date.
+#: includes/class-dtaw-orders.php:357
+#, php-format
+msgid "Paid on %s"
+msgstr ""
+
+#. translators: %s: payment reference.
+#: includes/class-dtaw-orders.php:361
+#, php-format
+msgid "Reference: %s"
+msgstr ""
+
+#: includes/class-dtaw-orders.php:374
+msgid "Mark this invoice as unpaid again?"
+msgstr ""
+
+#: includes/class-dtaw-orders.php:374
+msgid "Mark as unpaid"
+msgstr ""
+
+#: includes/class-dtaw-orders.php:378
+msgid "Payment received on"
+msgstr ""
+
+#: includes/class-dtaw-orders.php:379
+msgid "Reference"
+msgstr ""
+
+#: includes/class-dtaw-orders.php:379
+msgid "Bank reference, receipt number"
+msgstr ""
+
+#: includes/class-dtaw-orders.php:380
+msgid "Note"
+msgstr ""
+
+#: includes/class-dtaw-orders.php:381
+msgid "Record payment"
+msgstr ""
+
+#: includes/class-dtaw-orders.php:427
+msgid "Trade account:"
+msgstr ""
+
+#: includes/class-dtaw-orders.php:447
+#: includes/class-dtaw-orders.php:451
+msgid "On account"
+msgstr ""
+
+#: includes/class-dtaw-privacy.php:75
+msgid "Terms (days)"
+msgstr ""
+
+#: includes/class-dtaw-privacy.php:145
+msgid "The trade account application and notes were removed; the account status, terms and invoices were kept because they are financial records."
+msgstr ""
+
+#: includes/class-dtaw-privacy.php:159
+msgid "When you apply for a trade account we store the business details you give us (business name, tax id, phone number and your message) so we can assess the application and contact you about it. For orders placed on account we keep the due date, your purchase order number and the payments we receive, for as long as the law requires us to keep financial records."
+msgstr ""
+
+#: includes/class-dtaw-privacy.php:160
+msgid "Demfilz Trade Accounts"
+msgstr ""
+
+#: includes/class-dtaw-settings.php:106
+msgid "Processing (ship it, payment due later)"
+msgstr ""
+
+#: includes/class-dtaw-settings.php:107
+msgid "On hold (review before shipping)"
+msgstr ""
+
+#: includes/class-dtaw-settings.php:108
+msgid "Completed"
+msgstr ""
+
+#: includes/emails/class-dtaw-email-application.php:28
+msgid "Trade account application"
+msgstr ""
+
+#: includes/emails/class-dtaw-email-application.php:29
+msgid "Sent to the store when a customer applies for a trade account."
+msgstr ""
+
+#: includes/emails/class-dtaw-email-application.php:51
+msgid "Recipient(s)"
+msgstr ""
+
+#. translators: %s: admin email.
+#: includes/emails/class-dtaw-email-application.php:54
+#, php-format
+msgid "Enter recipients (comma separated) for this email. Defaults to %s."
+msgstr ""
+
+#: includes/emails/class-dtaw-email-application.php:69
+msgid "[{site_title}] Trade account application from {business}"
+msgstr ""
+
+#: includes/emails/class-dtaw-email-application.php:78
+msgid "New trade account application"
+msgstr ""
+
+#: includes/emails/class-dtaw-email-status.php:42
+msgid "Trade account status"
+msgstr ""
+
+#: includes/emails/class-dtaw-email-status.php:43
+msgid "Sent to the customer when their trade account is approved, declined or suspended."
+msgstr ""
+
+#: includes/emails/class-dtaw-email-status.php:59
+msgid "Your trade account at {site_title}: {status}"
+msgstr ""
+
+#: includes/emails/class-dtaw-email-status.php:68
+msgid "Your trade account"
+msgstr ""
+
+#. translators: %s: first name.
+#: templates/emails/dtaw-account-status.php:29
+#: templates/emails/plain/dtaw-account-status.php:26
+#, php-format
+msgid "Hi %s,"
+msgstr ""
+
+#: templates/emails/dtaw-account-status.php:31
+#: templates/emails/plain/dtaw-account-status.php:28
+msgid "Hi there,"
+msgstr ""
+
+#: templates/emails/dtaw-account-status.php:37
+#: templates/emails/plain/dtaw-account-status.php:32
+msgid "Good news: your trade account has been approved. From now on you can choose \"Pay on account\" at checkout and pay the invoice by its due date."
+msgstr ""
+
+#. translators: %d: days.
+#: templates/emails/dtaw-account-status.php:42
+#: templates/emails/plain/dtaw-account-status.php:35
+#, php-format
+msgid "Your terms: payment is due %d day from the order date."
+msgid_plural "Your terms: payment is due %d days from the order date."
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/emails/dtaw-account-status.php:44
+#: templates/emails/plain/dtaw-account-status.php:37
+msgid "Your terms: payment is due on the day the order is placed."
+msgstr ""
+
+#: templates/emails/dtaw-account-status.php:52
+#: templates/emails/plain/dtaw-account-status.php:43
+msgid "Thank you for applying for a trade account. We are not able to open one for you at the moment. You are welcome to keep ordering with our other payment methods."
+msgstr ""
+
+#: templates/emails/dtaw-account-status.php:54
+#: templates/emails/plain/dtaw-account-status.php:45
+msgid "Your trade account has been suspended, so \"Pay on account\" is not available at checkout for now. Any open invoices are still payable by their due dates. Please contact us if you have questions."
+msgstr ""
+
+#: templates/emails/dtaw-account-status.php:62
+msgid "See your trade account and invoices"
+msgstr ""
+
+#. translators: 1: customer name, 2: email address.
+#: templates/emails/dtaw-application.php:25
+#: templates/emails/plain/dtaw-application.php:24
+#, php-format
+msgid "%1$s (%2$s) has applied for a trade account."
+msgstr ""
+
+#: templates/emails/dtaw-application.php:56
+msgid "Open the application to approve or decline it"
+msgstr ""
+
+#: templates/emails/plain/dtaw-application.php:26
+msgid "Business:"
+msgstr ""
+
+#: templates/emails/plain/dtaw-application.php:28
+msgid "ABN / tax id:"
+msgstr ""
+
+#: templates/emails/plain/dtaw-application.php:31
+msgid "Phone:"
+msgstr ""
+
+#: templates/emails/plain/dtaw-application.php:34
+msgid "Message:"
+msgstr ""
