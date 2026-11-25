@@ -3,7 +3,7 @@
  * Plugin Name:       Demfilz Trade Accounts for WooCommerce
  * Plugin URI:        https://demfilz.com/trade-accounts-for-woocommerce
  * Description:       Let approved trade customers pay on account: a "Pay on account" option at checkout with payment terms and a purchase order number, account applications and approval, open invoices with due dates and balances owing, and payment recording.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Requires at least: 6.2
  * Requires PHP:      7.4
  * Requires Plugins:  woocommerce
@@ -13,14 +13,14 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       demfilz-trade-accounts-for-woocommerce
  * WC requires at least: 8.3
- * WC tested up to:   11.0
+ * WC tested up to:   11.3
  *
  * @package DemfilzTradeAccounts
  */
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'DTAW_VERSION', '1.0.2' );
+define( 'DTAW_VERSION', '1.0.3' );
 define( 'DTAW_FILE', __FILE__ );
 define( 'DTAW_PATH', plugin_dir_path( __FILE__ ) );
 define( 'DTAW_URL', plugin_dir_url( __FILE__ ) );
@@ -56,9 +56,11 @@ register_activation_hook( __FILE__, 'dtaw_activate' );
  */
 function dtaw_deactivate() {
 	global $wp_rewrite;
+	// WooCommerce adds the endpoint under its slug ("trade-account" unless filtered), not under the query var key.
+	$slug = class_exists( 'DTAW_Account' ) ? DTAW_Account::slug() : 'trade-account';
 	if ( $wp_rewrite instanceof WP_Rewrite && is_array( $wp_rewrite->endpoints ) ) {
 		foreach ( $wp_rewrite->endpoints as $index => $endpoint ) {
-			if ( isset( $endpoint[2] ) && 'dtaw-trade-account' === $endpoint[2] ) {
+			if ( ( isset( $endpoint[1] ) && $slug === $endpoint[1] ) || ( isset( $endpoint[2] ) && in_array( $endpoint[2], array( $slug, 'dtaw-trade-account' ), true ) ) ) {
 				unset( $wp_rewrite->endpoints[ $index ] );
 			}
 		}

@@ -466,14 +466,13 @@ class DTAW_Ledger {
 		}
 
 		$query_args = array(
-			'type'       => 'shop_order',
-			'status'     => 'open' === $args['state'] ? self::open_statuses() : array_keys( wc_get_order_statuses() ),
-			'limit'      => (int) $args['per'],
-			'page'       => max( 1, (int) $args['page'] ),
-			'orderby'    => 'date',
-			'order'      => 'DESC',
-			'paginate'   => true,
-			'meta_query' => $meta_query, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- Same.
+			'type'     => 'shop_order',
+			'status'   => 'open' === $args['state'] ? self::open_statuses() : array_keys( wc_get_order_statuses() ),
+			'limit'    => (int) $args['per'],
+			'page'     => max( 1, (int) $args['page'] ),
+			'orderby'  => 'date',
+			'order'    => 'DESC',
+			'paginate' => true,
 		);
 		if ( (int) $args['user_id'] > 0 ) {
 			$query_args['customer_id'] = (int) $args['user_id'];
@@ -482,12 +481,54 @@ class DTAW_Ledger {
 			$query_args['billing_email'] = $email;
 		}
 
-		$result = wc_get_orders( $query_args );
+		if ( self::uses_order_tables() ) {
+			$query_args['meta_query'] = $meta_query; // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- Same.
+			$result                   = wc_get_orders( $query_args );
+		} else {
+			// With orders stored as posts, WooCommerce silently drops the meta_query of wc_get_orders(). The
+			// conditions travel under a name of our own and post_orders_query() adds them to the query.
+			$query_args['dtaw_meta_query'] = $meta_query;
+			add_filter( 'woocommerce_order_data_store_cpt_get_orders_query', array( __CLASS__, 'post_orders_query' ), 10, 2 );
+			$result = wc_get_orders( $query_args );
+			remove_filter( 'woocommerce_order_data_store_cpt_get_orders_query', array( __CLASS__, 'post_orders_query' ), 10 );
+		}
 		return array(
 			'orders' => isset( $result->orders ) ? (array) $result->orders : array(),
 			'total'  => isset( $result->total ) ? (int) $result->total : 0,
 			'pages'  => isset( $result->max_num_pages ) ? (int) $result->max_num_pages : 0,
 		);
+	}
+
+	/**
+	 * Whether WooCommerce keeps orders in its own tables (HPOS) instead of posts.
+	 *
+	 * @return bool
+	 */
+	private static function uses_order_tables() {
+		return class_exists( '\Automattic\WooCommerce\Utilities\OrderUtil' )
+			&& \Automattic\WooCommerce\Utilities\OrderUtil::custom_orders_table_usage_is_enabled();
+	}
+
+	/**
+	 * Orders stored as posts: add the on-account conditions of query() to the WP_Query arguments.
+	 *
+	 * @param array $wp_query_args WP_Query arguments.
+	 * @param array $query_vars    Arguments given to wc_get_orders().
+	 * @return array
+	 */
+	public static function post_orders_query( $wp_query_args, $query_vars ) {
+		if ( empty( $query_vars['dtaw_meta_query'] ) || ! is_array( $query_vars['dtaw_meta_query'] ) ) {
+			return $wp_query_args;
+		}
+		unset( $wp_query_args['dtaw_meta_query'] );
+
+		// WooCommerce's own conditions (customer, email) are plain entries joined by AND; ours join them.
+		$have = isset( $wp_query_args['meta_query'] ) ? (array) $wp_query_args['meta_query'] : array();
+		foreach ( $query_vars['dtaw_meta_query'] as $clause ) {
+			$have[] = $clause;
+		}
+		$wp_query_args['meta_query'] = $have; // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- On-account orders are a small, flagged subset.
+		return $wp_query_args;
 	}
 
 	/**

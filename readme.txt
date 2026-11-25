@@ -2,8 +2,8 @@
 Contributors: demfilz
 Tags: trade account, pay on account, net 30, invoice payment, wholesale
 Requires at least: 6.2
-Tested up to: 7.1
-Stable tag: 1.0.2
+Tested up to: 7.2
+Stable tag: 1.0.3
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -113,6 +113,10 @@ Yes, with both order storage modes.
 
 == Changelog ==
 
+= 1.0.3 =
+* Fixed: on stores that keep orders as posts (High-Performance Order Storage off), the invoice lists, the CSV export and My Account could show ordinary orders, and the filters, the overdue view and the purchase order search had no effect. Balances and statements were not affected.
+* Deactivating the plugin now removes the My Account trade account address from the site's rewrite rules. Before, the rule stayed until the permalinks were next saved.
+
 = 1.0.2 =
 * The WP Rocket JavaScript exclusion now follows the site's plugins directory instead of assuming /wp-content/plugins/, so it also works where the content or plugins folder has been moved.
 
@@ -123,6 +127,9 @@ Yes, with both order storage modes.
 * First release.
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+No data changes. Fixes the invoice lists on stores with High-Performance Order Storage off. Deactivating the plugin now also removes its My Account address from the rewrite rules.
 
 = 1.0.2 =
 No data changes. The WP Rocket exclusion now works on sites with a custom plugins directory.
